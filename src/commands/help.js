@@ -18,6 +18,11 @@ let attachments = [
     color: '#E3E4E6',
     text: '`help` ... you\'re lookin at it! \n',
     mrkdwn_in: ['text']
+  },
+  { title: 'Mimic Vascos bad behaviour',
+    color: '#BF5FFF',
+    text: '`Just ask to mimic Vasco`',
+    mrkdwn_in: ['text']
   }
 ]
 

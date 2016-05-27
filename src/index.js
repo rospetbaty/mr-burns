@@ -35,8 +35,12 @@ controller.hears(['help', 'halp'], 'direct_message,direct_mention,mention', func
     bot.reply(message, reply);
 });
 
+controller.hears(['mimic vasco'], 'direct_message,direct_mention,mention', function(bot, message) {
+    bot.reply(message, 'Duuuudeeeeee! Is this real life?');
+});
+
 controller.hears(['opportunities'], 'direct_message,direct_mention,mention', function(bot, message) {
-    commands.opportunities.getOpportunitiesCount(
+    commands.opportunities.openOpportunitiesCount(
         function(response) {
             bot.reply(message, "The number of open opportunities is *"+response+"*");
         })
